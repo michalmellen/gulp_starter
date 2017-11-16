@@ -1,0 +1,74 @@
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+
+  /* zobraz mobile nav tlacidlo */
+  .nav-toggle {
+    display: block; }
+
+  /* urob overlay pre mobilne menu */
+  .menu {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+    transition: opacity 0.5s, visibility 0s 0.5s; }
+
+    .menu ul {
+      position: relative;
+      top: 50%;
+      text-align: center;
+    }
+
+    .menu li {
+      display: block;
+      margin-bottom: 20px;
+     }
+    .menu a {
+      display: block;
+      font-size: 25px;
+      margin: 0;
+      text-align: center;
+    }
+
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+    .testimonials blockquote {
+      border: 0;
+      margin: 0;
+      padding: 5% 15%;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+    .hero-h1 {
+        font-size: 4em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1em;
+    }
+    .hero-h1 {
+        font-size: 4.5em;
+    }
+}
